@@ -25,7 +25,8 @@ const folders = [
   function App() {
     const [showClock, setShowClock] = useState(true);
 
-    const toggleClock = () => setShowClock(!showClock)
+    const toggleClock = () => setShowClock(!showClock);
+
     return (
       <div className="widgets">
         <Folder folders={folders} />
@@ -36,7 +37,6 @@ const folders = [
       </div>
     );
   }
-  
+
 
 export default App;
-

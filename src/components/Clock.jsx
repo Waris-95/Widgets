@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 
 export function ClockToggle({ toggleClock }) {
   return (
-    <button 
+    <button
       type="button"
-      className="clock-toggle" 
+      className="clock-toggle"
       onClick={toggleClock}
     >
       Toggle Clock
@@ -12,7 +12,7 @@ export function ClockToggle({ toggleClock }) {
   );
 }
 
-export function Clock() {
+export default function Clock() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export function Clock() {
         </p>
         <p className="date">
           <span>
-            Date: 
+            Date:
           </span>
           <span>
             {time.toDateString()}
