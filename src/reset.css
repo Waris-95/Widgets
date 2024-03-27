@@ -1,4 +1,5 @@
 /* reset.css */
+/* Merging reset.css with your existing styles */
 
 a, article, body, button, div, fieldset, footer, form, h1, h2, header, html, i, img, input, label, li, main, nav, p, section, small, span, strong, textarea, time, ul {
   background: transparent;
@@ -32,8 +33,36 @@ button, input[type="email"], input[type="password"], input[type="submit"], input
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  cursor: pointer; /* Added cursor pointer */
 }
 
+/* Apply your existing styles for button and input[type="submit"] */
+/* This ensures that the styles are not overridden by reset.css */
 button, input[type="submit"] {
-  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Apply your existing styles for input fields */
+/* This ensures that the styles are not overridden by reset.css */
+input[type="email"], input[type="password"], input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, textarea:focus {
+  background-color: rgba(255, 255, 255, 0.2);
 }
