@@ -19,21 +19,6 @@ const Headers = ({ titles, currentTab, selectTab }) => {
   return <ul className="tab-header">{tabs}</ul>;
 };
 
-// class Folder extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       currentTab: 0
-//     };
-//   }
-
-//   selectTab = (num) => {
-//     this.setState({ currentTab: num });
-//   }
-
-//   render() {
-//     const folder = this.props.folders[this.state.currentTab];
-//     const titles = this.props.folders.map((folder) => folder.title);
 function Folder({ folders }) {
   const [currentTab, setCurrentTab] = useState(0);
 
